@@ -46,3 +46,33 @@ const myFunction = function(){
 }
 
 console.log(typeof bigNumber); // to find the datatype
+
+
+//*********************************************************
+
+// Stack(Primitive), Heap (non-primitive) 
+
+
+// stack 
+let myYoutubename = "channel_name"
+
+let anothername = myYoutubename
+anothername = "goutam"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// ****************************
+// heap
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "goutam@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
